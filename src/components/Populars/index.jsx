@@ -2,6 +2,7 @@ import React from 'react';
 
 import styles from './Populars.module.scss';
 import popImgFromDb from './popularImgDb.json';
+import Button from 'components/Button';
 
 export default function Populars() {
   const images = popImgFromDb;
@@ -18,7 +19,7 @@ export default function Populars() {
           );
         })}
       </ul>
-      <button>Ver mais</button>
+      <Button title='ver mais' />
     </aside>
   );
 }

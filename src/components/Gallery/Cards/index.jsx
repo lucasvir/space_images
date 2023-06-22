@@ -1,16 +1,13 @@
 import React from 'react';
 
 import styles from './Cards.module.scss';
-import imagesFromServer from '../imagesDb.json';
 
 import Card from './Card';
 
-export default function Cards() {
-  const images = imagesFromServer;
-
+export default function Cards({ data }) {
   return (
     <ul className={styles.cards}>
-      {images.map((image) => (
+      {data.map((image) => (
         <Card key={image.id} image={image} />
       ))}
     </ul>
