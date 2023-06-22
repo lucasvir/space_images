@@ -1,0 +1,20 @@
+@import '../../styles/vars';
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  background-color: $blue_dark;
+  color: $text-color;
+  font-family: $font_b;
+
+  height: 80px;
+  padding: 0 24px;
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+  }
+}

@@ -1,0 +1,59 @@
+@import-normalize;
+@import './_vars.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient($blue_dark, $blue_light);
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+body::-webkit-scrollbar-track {
+  background: linear-gradient($blue_dark, $blue_light);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $blue_light;
+  border-radius: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+button:hover,
+a:hover {
+  filter: brightness(0.8);
+}
+
+@font-face {
+  font-family: 'GandhiSansRegular';
+  src: local('GandhiSansRegular'),
+    url('../assets//fonts/GandhiSans-Regular.otf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GandhiSansBold';
+  src: local('GandhiSansBold'),
+    url('../assets//fonts/GandhiSans-Bold.otf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}

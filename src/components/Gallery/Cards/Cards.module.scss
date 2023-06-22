@@ -1,0 +1,9 @@
+@import '../../../styles/vars';
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}

@@ -1,0 +1,33 @@
+@import '../../styles/vars';
+
+.tags {
+  width: 62vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $text-color;
+  font-family: $font_r;
+  font-size: 16px;
+
+  margin-top: 24px ;
+  margin-bottom: 24px ;
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  &__lista {
+    list-style: none;
+    width: 380px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      background-color: $tag-color;
+      padding: 6px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}
